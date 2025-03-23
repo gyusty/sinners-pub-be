@@ -41,4 +41,4 @@ on Windows Powershell:
 
 
 ### 4. Start the aplication
-    uvicorn main:app --reload
+    uvicorn app.main:app --reload
