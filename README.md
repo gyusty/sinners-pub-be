@@ -22,6 +22,8 @@ Follow the steps below to run it locally on your machine.
 git clone https://github.com/gyusty/sinners-pub-fe.git
 cd sinners-pub-fe
 
+---
+
 ### 2. Create and activate virtual environment
 
 python -m venv .venv
@@ -35,10 +37,12 @@ on Windows CMD:
 on Windows Powershell:
     .venv\Scripts\Activate.ps1
 
+---
 
 ### 3. Install dependencies
     pip install -r requirements.txt
 
+---
 
 ### 4. Start the aplication
     uvicorn app.main:app --reload
