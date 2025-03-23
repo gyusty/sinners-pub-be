@@ -55,8 +55,9 @@ def create_order(order: OrderCreate):
 @router.put("/order/{order_id}")
 def update_order(order_id: str, order: OrderUpdateInput):
     try:
-        validate_and_update_stock(order.itemList, repository)
-        updated_order = orderList.update_order(order_id,  order.itemList, order.isPaid)
+        if not order.isPaid:
+            validate_and_update_stock(order.itemList, repository)
+        updated_order = orderList.update_order(order_id, order.itemList, order.isPaid)
         if not updated_order:
             raise HTTPException(status_code=404, detail="Order not found")
         return {"message": "Order updated successfully", "order": updated_order}

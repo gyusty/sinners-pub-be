@@ -1,0 +1,60 @@
+# Ignora los archivos de bytecode de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignora los entornos virtuales
+venv/
+env/
+.venv/
+ENV/
+
+# Ignora los archivos de configuración de IDE
+.vscode/
+.idea/
+
+# Ignora los archivos de configuración de Python
+*.egg-info/
+*.egg
+dist/
+build/
+pip-wheel-metadata/
+
+# Ignora los archivos de caché y logs
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+*.sqlite3
+
+# Ignora los archivos de entorno
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Ignora los archivos de base de datos (si usas SQLite, por ejemplo)
+*.db
+*.sqlite
+
+# Ignora los archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignora los archivos de Jupyter Notebook
+.ipynb_checkpoints/
+
+# Ignora los archivos de dependencias
+node_modules/
+bower_components/
+
+# Ignora los archivos de compilación
+*.mo
+*.pot
+
+# Ignora los archivos de caché de Sphinx
+docs/_build/
+
+# Ignora los archivos de caché de Pytest
+.pytest_cache/
