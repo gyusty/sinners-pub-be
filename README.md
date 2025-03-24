@@ -41,6 +41,8 @@ on Windows Powershell:
 
 ### 3. Install dependencies
     pip install -r requirements.txt
+    pip install fastapi "uvicorn[standard]"
+
 
 ---
 
